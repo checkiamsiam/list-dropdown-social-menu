@@ -1,0 +1,89 @@
+body{
+  background-image: url(./photo/background.jpg);
+  background-repeat: no-repeat;
+  background: cover;
+
+}
+/* line menu */
+.menu{
+  text-align: center;
+  
+
+}
+.menu ul li {
+  display: inline-block;
+  margin-top: 15px;
+  
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 21px;
+  color: whitesmoke;
+}
+.menu ul li a:hover{
+  color: green;
+  transition: .2s;
+}
+/* dropdown menu */
+.drop{
+  position: relative;
+  display: inline-block;
+  left: 600px;
+}
+.drop div {
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.drop div ul {
+  list-style-type:none;
+  margin-top: 0px;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .7s;
+ 
+}
+
+.down ul{
+  text-decoration: none;
+  color: whitesmoke;
+ opacity: 0;
+ visibility: hidden;
+ list-style-type:none;
+ transform: scaleY(0);
+ transform-origin: top;
+
+}
+.drop .down ul li a{
+  text-decoration: none;
+  color: aquamarine;
+  background: transparent;
+}
+.drop .down ul li a:hover{
+  color:rgb(122, 158, 75);
+}
+.down:hover{
+  color: greenyellow;
+  
+}
+.down:hover ul{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+/*  social menu */
+.social ul li{
+  display: inline-block;
+  display: inline-block;
+    margin-top: 200px;
+    position: relative;
+    left: 450px;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+}
